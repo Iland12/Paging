@@ -9,9 +9,27 @@
         margin: 0;
         padding: 0;
       }
+      body {
+        background-image: linear-gradient(
+            rgba(1, 1, 1, 0.627),
+            rgba(59, 56, 56, 0.734)
+          ),
+          url(https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?q=80&w=704&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        /* background-size: cover; */
+        opacity: 1;
+        z-index: -1;
+      }
+      h1 {
+        text-align: center;
+        padding-top: 5rem;
+        font-size: 3rem;
+        color: rgba(209, 200, 200, 0.735);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.633);
+        z-index: 100;
+      }
       .container {
         width: 100vw;
-        height: 100vh;
+        height: 80vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -31,23 +49,24 @@
         font-weight: bold;
       }
       a.operator {
-        background-color: rgb(95, 242, 193);
-        box-shadow: 0 7px 15px rgb(146, 140, 140);
+        background-color: rgba(255, 255, 255, 0.724);
+        box-shadow: 0 7px 15px rgb(36, 34, 34);
         border-radius: 7px;
       }
       .operator:hover {
         color: white;
-        background-color: rgb(16, 182, 126);
+        background-color: rgb(67, 105, 121);
       }
       a.active {
-        background-color: aqua;
-        box-shadow: inset 0 0 25px rgb(130, 126, 126);
+        background-color: rgba(148, 150, 154, 0.691);
+        box-shadow: inset 0 0 25px rgb(5, 5, 5);
         border-radius: 7px;
         font-size: 1.4rem;
         font-weight: bold;
         min-width: 20vw;
         min-height: 30%;
       }
+
       @media (max-width: 768px) {
         a {
           font-size: 1rem;
@@ -74,9 +93,22 @@
           min-height: 10%;
         }
       }
+      @media (max-width: 390px) {
+        a {
+          font-size: 0.6rem;
+          min-width: 20px;
+          min-height: 20px;
+        }
+        a.active {
+          font-size: 0.8rem;
+          min-width: 8vw;
+          min-height: 8%;
+        }
+      }
     </style>
   </head>
   <body>
+    <h1>Pagination</h1>
     <div class="container">
       <a href="page9.html" class="operator"><</a>
       <a href="index.html">1</a>
